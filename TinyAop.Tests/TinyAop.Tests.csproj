@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F1642DE2-7F59-44BD-8EDE-DB3AF74143F2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TinyAop.Tests</RootNamespace>
+    <AssemblyName>TinyAop.Tests</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework, Version=2.4.7.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Components\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BDD.cs" />
+    <Compile Include="Demo_scenarios\AutoNotifyPropertyChanged\AutoNotifyPropertyChangedImplementationStrategy.cs" />
+    <Compile Include="Demo_scenarios\AutoNotifyPropertyChanged\IAutoNotifyPropertyChanged.cs" />
+    <Compile Include="Demo_scenarios\AutoNotifyPropertyChanged\IPerson.cs" />
+    <Compile Include="Demo_scenarios\AutoNotifyPropertyChanged\NotifyPropertyChangeAdvice.cs" />
+    <Compile Include="Demo_scenarios\AutoNotifyPropertyChanged\AutoNotifyPropertyChangedTests.cs" />
+    <Compile Include="Demo_scenarios\AutoNotifyPropertyChanged\Person.cs" />
+    <Compile Include="Demo_scenarios\SimpleDemo\Simple_advice_demo.cs" />
+    <Compile Include="Mocks\ISubjectIWithReturningMethod.cs" />
+    <Compile Include="Mocks\ISubjectWithOneInheritedProperty.cs" />
+    <Compile Include="Mocks\ISubjectWithInheritedMethod.cs" />
+    <Compile Include="Mocks\ISubjectWithOneProperty.cs" />
+    <Compile Include="Mocks\NotProceedingTestAdvice.cs" />
+    <Compile Include="Mocks\SubjectWithOneInheritedProperty.cs" />
+    <Compile Include="Mocks\SubjectWithInheritedMethod.cs" />
+    <Compile Include="Mocks\SubjectWithOneMethodProxy.cs" />
+    <Compile Include="Mocks\SubjectWithOneParameterlessMethodProxy.cs" />
+    <Compile Include="Mocks\SubjectWithOneProperty.cs" />
+    <Compile Include="Mocks\SubjectWithOnePropertyProxy.cs" />
+    <Compile Include="Mocks\SubjectWithReturningMethod.cs" />
+    <Compile Include="Scenarios_for_Advice\Specs_for_AdviceContext.cs" />
+    <Compile Include="Scenarios_for_InvocationProxy\Specs_for_InvocationProxy_with_arguments.cs" />
+    <Compile Include="Mocks\ISubjectWithOneMethod.cs" />
+    <Compile Include="Mocks\SubjectWithOneMethod.cs" />
+    <Compile Include="Scenarios_for_InvocationProxy\Specs_for_InvocationProxy_with_multiple_advice.cs" />
+    <Compile Include="Mocks\ProceedingTestAdvice.cs" />
+    <Compile Include="Scenarios_for_InvocationProxy\Specs_for_InvocationProxy.cs" />
+    <Compile Include="Mocks\ISubjectWithOneParameterlessMethod.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Mocks\SubjectWithOneParameterlessMethod.cs" />
+    <Compile Include="Scenarios_for_InvocationProxy\Specs_for_InvocationProxy_with_properties.cs" />
+    <Compile Include="Scenarios_for_ProxyFactory\Subjects_with_events\Specs_for_creating_proxy_with_events.cs" />
+    <Compile Include="Mocks\ISubjectWithEvent.cs" />
+    <Compile Include="Mocks\SubjectWithEvent.cs" />
+    <Compile Include="Scenarios_for_ProxyFactory\Subjects_with_methods\Specs_for_creating_proxy_when_method_inherited.cs" />
+    <Compile Include="Scenarios_for_ProxyFactory\Subjects_with_methods\Specs_for_creating_proxy_when_method_has_parameters.cs" />
+    <Compile Include="Scenarios_for_ProxyFactory\Subjects_with_methods\Specs_for_creating_proxy.cs" />
+    <Compile Include="Scenarios_for_ProxyFactory\Subjects_with_methods\Specs_for_creating_proxy_when_method_returns_an_object.cs" />
+    <Compile Include="Scenarios_for_ProxyFactory\Subjects_with_properties\Specs_for_creating_proxy_with_inherited_properties.cs" />
+    <Compile Include="Scenarios_for_ProxyFactory\Subjects_with_properties\Specs_for_creating_proxy_with_properties.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TinyAop\TinyAop.csproj">
+      <Project>{1A8695D3-3595-455A-A6E8-3E0A0E371E11}</Project>
+      <Name>TinyAop</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

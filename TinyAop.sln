@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyAop", "TinyAop\TinyAop.csproj", "{1A8695D3-3595-455A-A6E8-3E0A0E371E11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinyAop.Tests", "TinyAop.Tests\TinyAop.Tests.csproj", "{F1642DE2-7F59-44BD-8EDE-DB3AF74143F2}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs09.codeplex.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = TinyAop\\TinyAop.csproj
+		SccProjectName1 = TinyAop
+		SccLocalPath1 = TinyAop
+		SccProjectUniqueName2 = TinyAop.Tests\\TinyAop.Tests.csproj
+		SccProjectName2 = TinyAop.Tests
+		SccLocalPath2 = TinyAop.Tests
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A8695D3-3595-455A-A6E8-3E0A0E371E11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A8695D3-3595-455A-A6E8-3E0A0E371E11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A8695D3-3595-455A-A6E8-3E0A0E371E11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A8695D3-3595-455A-A6E8-3E0A0E371E11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1642DE2-7F59-44BD-8EDE-DB3AF74143F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1642DE2-7F59-44BD-8EDE-DB3AF74143F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1642DE2-7F59-44BD-8EDE-DB3AF74143F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1642DE2-7F59-44BD-8EDE-DB3AF74143F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

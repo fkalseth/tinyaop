@@ -1,1 +1,5 @@
-tinyAOP
+tinyAOP is a tiny proxy based AOP framework, written to demonstrate the concepts of AOP. It was featured in my NDC 2010 talk about AOP.
+
+For usage demo, see TinyAop.Tests/Demo_scenarios/
+
+It's a very bare bones framework, written for educational purposes. So use this in production code at your own risk :-p
